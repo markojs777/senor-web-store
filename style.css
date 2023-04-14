@@ -49,11 +49,13 @@ h1 {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 10px;
+  line-height: 1;
 }
 
 h2 {
   font-size: 2.827em;
   margin-bottom: 20px;
+  line-height: 1;
 }
 
 h3 {
@@ -79,10 +81,13 @@ h6 {
   font-size: 40px;
   color: #c29117;
   margin-bottom: 10px;
+  display: block;
 }
 
 .overline.dark {
   color: #c29117;
+  margin-bottom: 10px;
+  display: block;
 }
 
 .no-discount {

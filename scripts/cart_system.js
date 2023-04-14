@@ -598,6 +598,7 @@ const priceRangeFunctionality = function (gap) {
 };
 
 // Homepage Featured Products Functionality
+
 const createFeaturedProductsSkeleton = function (productsContainer) {
   productsContainer.innerHTML = '';
 
@@ -682,9 +683,10 @@ const featuredProductsSlider = function (singleProductEl, numOfFeatured) {
 
   // Previous Slide
   const scrollPreviousProduct = function () {
-    if (scrollP < 1) return;
-    scrollP--;
-    updateSlider(scrollP);
+    if (scrollP > 0) {
+      scrollP--;
+      updateSlider(scrollP);
+    }
   };
 
   nextFeaturedProduct.addEventListener('click', scrollNextProduct);
